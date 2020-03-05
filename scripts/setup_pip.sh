@@ -11,9 +11,9 @@ fi
 
 # This little dance allows us to install the latest pip and setuptools
 # without get_pip.py or the python-pip package (in epel on centos)
-if (( $(${TMP_VIRTUALENV} --version | cut -d. -f1) >= 14 )); then
-    SETUPTOOLS="--no-setuptools"
-fi
+#if (( $(${TMP_VIRTUALENV} --version | cut -d. -f1) >= 14 )); then
+#    SETUPTOOLS="--no-setuptools"
+#fi
 
 # virtualenv 16.4.0 fixed symlink handling. The interaction of the new
 # corrected behavior with legacy bugs in packaged virtualenv releases in
